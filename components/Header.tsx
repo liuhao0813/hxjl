@@ -53,13 +53,22 @@ export default function Header() {
           <li className="p-4 hover:bg-blue-600">
             <a href="#">客户服务</a>
           </li> */}
-          <Link href="/product">
+          <Link
+            href="/product"
+            className={`link ${pathname === "/product" ? "bg-blue-600" : ""}`}
+          >
             <li className="p-4 hover:bg-blue-600">服务中心</li>
           </Link>
-          <Link href="/news">
+          <Link
+            href="/news"
+            className={`link ${pathname === "/news" ? "bg-blue-600" : ""}`}
+          >
             <li className="p-4 hover:bg-blue-600">新闻资讯</li>
           </Link>
-          <Link href="/download">
+          <Link
+            href="/download"
+            className={`link ${pathname === "/download" ? "bg-blue-600" : ""}`}
+          >
             <li className="p-4 hover:bg-blue-600">在线下载</li>
           </Link>
           <Link
