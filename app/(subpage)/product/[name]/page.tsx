@@ -1,5 +1,3 @@
-"use client";
-
 import Image from "next/image";
 import {
   Carousel,
@@ -10,6 +8,14 @@ import {
 import { Button } from "@/components/ui/button";
 
 import company from "@/public/images/home/company.jpg";
+
+export async function generateStaticParams() {
+  return [
+    {
+      name: "detail",
+    },
+  ];
+}
 
 export default function page() {
   return (
